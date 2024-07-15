@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toe Game </title>
+    <!-- vanila css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="wins">
+            <p style="font-size: 19px !important;">Win 😍</p>
+            <i class="fa-solid fa-xmark" style="color: #B197FC;"></i>
+            <p id="jeet" style="font-size: 16px !important; text-align: center;">0</p>
+        </div>
+        <div class="loss">
+            <p style="font-size: 19px !important;">Loss &#128546</p><i class="fa-regular fa-circle"
+            style="color: #b3cacb;"></i>
+            <p id="har" style="font-size: 16px !important; text-align: center;">0</p>
+        </div>
+        <div class="draws">
+            <p style="font-size: 19px !important;">Draw &#129309</p><i class="fa-solid fa-scale-balanced"
+            style="color: #FFD43B;"></i>
+            <p id="barabr" style="font-size: 16px !important;text-align: center;">0</p>
+        </div>
+    </div>
+
+
+    <div class="game" id="game">
+        <div style="display: flex;justify-content: center;">
+            <div class="game-item a" id="1"></div>
+            <div class="game-item b" id="2"></div>
+            <div class="game-item c" id="3"></div>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <div class="game-item d" id="4"></div>
+            <div class="game-item e" id="5"></div>
+            <div class="game-item f" id="6"></div>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <div class="game-item g" id="7"></div>
+            <div class="game-item h" id="8"></div>
+            <div class="game-item i" id="9"></div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <div class="restart">
+            <div style="display: flex; justify-content: center;align-items: center;  gap: 20px;">
+                <p id="win"></p>
+                <p id="mess" style="font-size: 19px;">Congratulations you win</p>
+            </div>
+            <button style="margin-top: 20px;" class="button" id="p">Play Again</button>
+        </div>
+    </div>
+    <h1 id="ee"></h1>
+    <script src="app.js"></script>
+</body>
+
+</html>
